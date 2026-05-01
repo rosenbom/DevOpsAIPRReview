@@ -1,0 +1,70 @@
+{
+  "manifestVersion": 1,
+  "id": "devops-ai-pr-review",
+  "publisher": "DmitryRozenraukh",
+  "version": "0.1.24",
+  "name": "AI-assisted PR Review",
+  "description": "AI-assisted pull request review hub for Azure Repos with backend-driven analysis and publish support.",
+  "public": true,
+  "galleryFlags": [
+    "Preview"
+  ],
+  "targets": [
+    {
+      "id": "Microsoft.VisualStudio.Services"
+    }
+  ],
+  "categories": [
+    "Azure Repos"
+  ],
+  "tags": [
+    "ai",
+    "azure-repos",
+    "pull-request",
+    "code-review",
+    "security"
+  ],
+  "content": {
+    "details": {
+      "path": "overview.md"
+    }
+  },
+    "links": {
+      "homepage": {
+        "uri": "https://github.com/rosenbom/DevOpsAIPRReview"
+      },
+      "repository": {
+        "uri": "https://github.com/rosenbom/DevOpsAIPRReview"
+      },
+      "issues": {
+        "uri": "https://github.com/rosenbom/DevOpsAIPRReview/issues"
+      }
+    },
+    "icons": {
+      "default": "images/icon.png"
+    },
+    "files": [
+      {
+        "path": "images",
+        "addressable": true
+      },
+      {
+        "path": "dist",
+        "addressable": true
+      }
+    ],
+    "contributions": [
+      {
+        "id": "azure-repos-ai-review-pr-tab",
+        "type": "ms.vss-web.tab",
+        "targets": [
+          "ms.vss-code-web.pr-tabs"
+        ],
+        "properties": {
+          "name": "AI Review",
+          "uri": "dist/hub.html",
+          "order": 100
+        }
+      }
+    ]
+  }

@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>DevOps AI Review</title>
+  <style>
+    body {
+      font-family: Segoe UI, Arial, sans-serif;
+      margin: 0;
+      padding: 24px;
+      background: #ffffff;
+      color: #242424;
+    }
+
+    .card {
+      max-width: 960px;
+      border: 1px solid #e1e1e1;
+      border-radius: 8px;
+      padding: 24px;
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.06);
+    }
+
+    h1 {
+      margin-top: 0;
+      font-size: 24px;
+    }
+
+    .status {
+      margin: 16px 0;
+      padding: 12px;
+      border-radius: 6px;
+      background: #f6f8fa;
+      white-space: pre-wrap;
+    }
+
+    .progress-details {
+      margin-top: 12px;
+      padding: 12px;
+      border-radius: 6px;
+      background: #f6f8fa;
+      white-space: pre-wrap;
+      font-family: Consolas, "Courier New", monospace;
+    }
+
+    .muted {
+      color: #666;
+      font-size: 14px;
+    }
+
+    label, input, select, button {
+      display: block;
+      width: 100%;
+      box-sizing: border-box;
+    }
+
+    input, select {
+      margin: 8px 0 16px;
+      padding: 10px;
+    }
+
+    button {
+      width: auto;
+      padding: 10px 16px;
+      border: 0;
+      border-radius: 4px;
+      background: #0078d4;
+      color: white;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+  <div class="card">
+    <h1>DevOps AI Review</h1>
+    <p class="muted">AI-assisted pull request review.</p>
+
+    <label for="apiBaseUrl">Backend API base URL</label>
+    <input id="apiBaseUrl" type="text" placeholder="https://your-backend-host" />
+
+    <label for="provider">Analysis provider</label>
+    <select id="provider">
+      <option value="mock">mock</option>
+      <option value="azure-openai">azure-openai</option>
+    </select>
+
+    <button id="checkHealth" type="button">Check backend health</button>
+
+    <div id="status" class="status">Ready.</div>
+    <div id="progressDetails" class="progress-details">Analysis status: ready - 0s</div>
+    <div id="hubMeta" class="muted"></div>
+    <div id="reviewActions" style="margin-top:16px;"></div>
+    <div id="analysisDetails" style="margin-top:24px;"></div>
+  </div>
+
+  <script src="hub.js"></script>
+</body>
+</html>
