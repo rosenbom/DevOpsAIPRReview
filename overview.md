@@ -5,7 +5,7 @@ AI-assisted pull request review extension for Azure Repos.
 The extension adds an `AI Review` hub to pull requests and connects to a backend service that can run analysis, report findings, and support local or Azure OpenAI-backed review flows.
 ## Sample result
 
-<img width="1315" height="911" alt="image" src="https://github.com/user-attachments/assets/c73b3671-77c3-4763-aab5-85340fe318a8" />
+<img width="1271" height="913" alt="image" src="https://github.com/user-attachments/assets/a5263f30-eb2c-42e5-b6ca-bf16010dc9ce" />
 
 ## Backend
 The easiest way to run the backend API is via Docker container:
